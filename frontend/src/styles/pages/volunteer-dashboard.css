@@ -1,0 +1,62 @@
+.volunteer-page {
+  min-height: 100vh;
+  background: var(--color-bg);
+}
+
+.volunteer-page__section {
+  margin-top: 0.5rem;
+}
+
+.volunteer-page__section-title {
+  color: var(--color-primary-dark);
+  margin-bottom: 1.25rem;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--color-border);
+}
+
+.volunteer-page__panel {
+  animation: fadeIn 0.25s ease;
+}
+
+.task-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.task-card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s ease;
+}
+
+.task-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-primary-light);
+}
+
+.task-card h3 {
+  color: var(--color-primary-dark);
+  margin-bottom: 8px;
+}
+
+.task-card__deadline {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin: 8px 0;
+}
+
+.task-card .btn {
+  margin-top: 16px;
+}
+
+.task-card--completed {
+  opacity: 0.75;
+  background: #f8faf9;
+}
