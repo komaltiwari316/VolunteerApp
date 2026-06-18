@@ -4,7 +4,7 @@ const router = express.Router();
 const {
   volunteerRegister,
   volunteerLogin
-} = require("../controllers/volunteerAuthController");
+} = require("../Controllers/VolunteerAuthController");
 
 router.post("/register", volunteerRegister);
 

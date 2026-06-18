@@ -1,14 +1,14 @@
 const express = require("express");
 const router = express.Router();
 
-const authMiddleware = require("../middleware/authMiddleware");
-const adminMiddleware = require("../middleware/adminMiddleware");
+const authMiddleware = require("../Middleware/authMiddleware");
+const adminMiddleware = require("../Middleware/adminMiddleware");
 
 const {
   assignTask,
   getMyTasks,
   completeTask
-} = require("../controllers/taskController");
+} = require("../Controllers/taskController");
 
 
 // admin assign task
